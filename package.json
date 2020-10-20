@@ -1,0 +1,23 @@
+{
+  "name": "monocomplex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": "true",
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "packages/shared/*"
+    ],
+    "nohoist": [
+      "**/jest",
+      "**/ts-jest",
+      "**/typeorm/**",
+      "**/typeorm"
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.3",
+    "@monocomplex/eslint-config": "*"
+  }
+}
