@@ -9,7 +9,7 @@ import User from '../infra/typeorm/entities/User'
 interface IRequest {
   name: string
   email: string
-  password: string
+  password: string2
 }
 
 @injectable()
