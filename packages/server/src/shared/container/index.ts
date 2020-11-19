@@ -12,6 +12,9 @@ import UserTokensRepository from '@modules/users/infra/typeorm/repositories/User
 import INotificationsRepository from '@modules/notifications/repositories/INotificationRepository'
 import NotificationsRepository from '@modules/notifications/infra/typeorm/repositories/NotificationsRepository'
 
+import ITccsRepository from '@modules/tccs/repositories/ITccsRepository'
+import TccsRepository from '@modules/tccs/infra/typeorm/repositories/TccsRepository'
+
 container.registerSingleton<IUsersRepository>(
   'UsersRepository',
   UsersRepository
@@ -26,3 +29,5 @@ container.registerSingleton<INotificationsRepository>(
   'NotificationsRepository',
   NotificationsRepository
 )
+
+container.registerSingleton<ITccsRepository>('TccsRepository', TccsRepository)

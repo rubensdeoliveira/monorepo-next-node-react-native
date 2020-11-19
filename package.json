@@ -11,8 +11,10 @@
     "nohoist": [
       "**/jest",
       "**/ts-jest",
+      "**/typeorm",
       "**/typeorm/**",
-      "**/typeorm"
+      "**/*react-native*",
+      "**/*react-native*/**"
     ]
   },
   "license": "MIT",
